@@ -67,7 +67,7 @@ main {
   padding: 1em 1em;
   margin: 1em;
   display: flex;
-  color: #a6dcef;
+  color: #0288d1;
   float: right;
   font-weight: 500;
   font-size: large;
@@ -79,7 +79,7 @@ main {
 }
 
 .navlist:hover {
-  color: #455a64;
+  color: #a6dcef;
   border: solid 2px #ffffff;
   border-top: none;
   border-bottom: none;
@@ -91,8 +91,8 @@ main {
   margin: auto 1em;
   display: inline;
   float: right;
-  color: #455a64;
-  background-color: #a6dcef;
+  color: #ffffff;
+  background-color: #0288d1;
   border: none;
   border-radius: 4px;
   font-size: large;
@@ -102,8 +102,8 @@ main {
 }
 
 .navlist-especial:hover {
-  background-color: #455a64;
-  color: #a6dcef;
+  background-color: #a6dcef;
+  color: #ffffff;
 }
 
 .nav-item {
@@ -115,7 +115,7 @@ main {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  color: #a6dcef;
+  color: #0288d1;
 }
 
 @media (max-width: 767px) {
@@ -155,7 +155,7 @@ main {
     width: 100%;
     list-style: none;
     font-size: 1.2em;
-    color: #a6dcef;
+    color: #0288d1;
     transition: color 0.3s ease;
   }
 
@@ -164,13 +164,13 @@ main {
     width: auto;
     text-align: center;
     padding: 0px;
-    color: #a6dcef;
+    color: #0288d1;
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
   .nav-item a.navlist:hover {
-    color: #455a64;
+    color: #a6dcef;
   }
 
   .navlist-especial {
@@ -179,8 +179,8 @@ main {
     text-align: center;
     margin: 0;
     padding: 10px 20px;
-    background-color: #a6dcef;
-    color: #455a64;
+    background-color: #0288d1;
+    color: #ffffff;
     text-decoration: none;
     border-radius: 4px;
     transition: all 0.3s ease;
@@ -272,7 +272,7 @@ main {
   font-weight: 700;
   margin-bottom: 1.5rem;
   line-height: 1.2;
-  color: #455a64;
+  color: #0288d1;
 }
 
 .hero-slogan {
@@ -287,8 +287,8 @@ main {
 }
 
 .hero-button {
-  background-color: #a6dcef;
-  color: #455a64;
+  background-color: #0288d1;
+  color: #ffffff;
   border: none;
   padding: 15px 35px;
   font-size: 1.2rem;
@@ -299,8 +299,8 @@ main {
 }
 
 .hero-button:hover {
-  background-color: #455a64;
-  color: #a6dcef;
+  background-color: #a6dcef;
+  color: #ffffff;
 }
 
 .hero-button:active {
@@ -352,7 +352,7 @@ footer {
   width: 100%;
   padding: 3em 5em 1em 5em;
   background-color: #ffffff;
-  border-top: 2px solid #a6dcef;
+  border-top: 2px solid #0288d1;
   margin-top: auto;
   flex-shrink: 0;
 }
@@ -370,7 +370,7 @@ footer {
 }
 
 .footer-link {
-  color: #455a64;
+  color: #0288d1;
   font-weight: 400;
   font-size: medium;
   text-decoration: none;
@@ -379,7 +379,7 @@ footer {
 }
 
 .footer-link:hover {
-  color: #00796b;
+  color: #a6dcef;
 }
 
 .derechos {
@@ -433,14 +433,14 @@ footer {
     text-align: center;
   }
   .footer-link:hover {
-    color: #00796b;
+    color: #a6dcef;
   }
   .derechos {
     margin-top: 20px;
     text-align: center;
   }
   .derechos a {
-    color: #00796b;
+    color: #0288d1;
     font-style: italic;
     text-decoration: none;
   }
