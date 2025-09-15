@@ -13,23 +13,25 @@ body {
 }
 
 body {
-  background-color: #000000;
+  background-color: #ffffff;
   margin: 0;
 }
 /*
-color de fondo:                     --- #000000
-color de texto:                     --- #fcc700
-colortxt hover:                     --- #c0c0c0
-color de hover de contacto en nav:  --- #505050
-fonde de cada plan:                 --- #272727
-
-
-
+  Paleta de colores odontológica:
+  Color principal: Celeste suave      --- #A6DCEF
+  Secundario: Verde menta claro       --- #C8E6C9
+  Neutro claro: Blanco                --- #FFFFFF
+  Neutro oscuro: Gris azulado         --- #455A64
+  Color acento: Azul petróleo         --- #00796B
+  Color acento alternativo: Celeste   --- #0288D1
+  */
 
 /* inicia css footer */
 footer {
   width: 100%;
   padding: 10em 5em 1em 5em;
+  background-color: #a6dcef;
+  margin-top: 2em;
 }
 
 .contenedor-footer {
@@ -45,7 +47,7 @@ footer {
 }
 
 .footer-link {
-  color: #c0c0c0;
+  color: #455a64;
   font-weight: 400;
   font-size: medium;
   text-decoration: none;
@@ -54,11 +56,11 @@ footer {
 }
 
 .footer-link:hover {
-  color: #505050;
+  color: #00796b;
 }
 
 .derechos {
-  color: #c0c0c0;
+  color: #455a64;
   font-size: medium;
   font-weight: 400;
   text-align: center;
@@ -99,13 +101,13 @@ footer {
     margin: 10px 10px;
   }
   .footer-link:hover {
-    color: #c0c0c0;
+    color: #00796b;
   }
   .derechos {
     margin-top: 15px;
   }
   .derechos a {
-    color: #fcc700;
+    color: #00796b;
     font-style: italic;
     text-decoration: none;
   }
