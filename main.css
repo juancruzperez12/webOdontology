@@ -23,7 +23,6 @@ body {
 
 main {
   flex: 1;
-  padding-top: 100px; /* Espacio para el navbar fijo */
 }
 /*
   Paleta de colores odontológica:
@@ -68,7 +67,7 @@ main {
   padding: 1em 1em;
   margin: 1em;
   display: flex;
-  color: #455a64;
+  color: #a6dcef;
   float: right;
   font-weight: 500;
   font-size: large;
@@ -80,7 +79,7 @@ main {
 }
 
 .navlist:hover {
-  color: #00796b;
+  color: #455a64;
   border: solid 2px #ffffff;
   border-top: none;
   border-bottom: none;
@@ -92,12 +91,10 @@ main {
   margin: auto 1em;
   display: inline;
   float: right;
-  color: #ffffff;
-  background-color: #00796b;
-  border-color: #00796b;
-  border: 0.3em;
-  border-style: solid;
-  border-radius: 0.6em;
+  color: #455a64;
+  background-color: #a6dcef;
+  border: none;
+  border-radius: 4px;
   font-size: large;
   font-weight: 600;
   text-decoration: none;
@@ -105,10 +102,8 @@ main {
 }
 
 .navlist-especial:hover {
-  background-color: #0288d1;
-  border-color: #0288d1;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(2, 136, 209, 0.3);
+  background-color: #455a64;
+  color: #a6dcef;
 }
 
 .nav-item {
@@ -120,7 +115,7 @@ main {
   display: none;
   font-size: 30px;
   cursor: pointer;
-  color: #455a64;
+  color: #a6dcef;
 }
 
 @media (max-width: 767px) {
@@ -160,7 +155,7 @@ main {
     width: 100%;
     list-style: none;
     font-size: 1.2em;
-    color: #455a64;
+    color: #a6dcef;
     transition: color 0.3s ease;
   }
 
@@ -169,13 +164,13 @@ main {
     width: auto;
     text-align: center;
     padding: 0px;
-    color: #455a64;
+    color: #a6dcef;
     text-decoration: none;
     transition: color 0.3s ease;
   }
 
   .nav-item a.navlist:hover {
-    color: #00796b;
+    color: #455a64;
   }
 
   .navlist-especial {
@@ -184,10 +179,10 @@ main {
     text-align: center;
     margin: 0;
     padding: 10px 20px;
-    background-color: #00796b;
-    color: #ffffff;
+    background-color: #a6dcef;
+    color: #455a64;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 4px;
     transition: all 0.3s ease;
   }
 
@@ -233,11 +228,131 @@ main {
 }
 /* CIERRE barra de navegación*/
 
+/* INICIA Sección Hero */
+.hero {
+  height: 100vh;
+  background-image: url("fondo horizontal.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: -100px; /* Compensar el padding del main */
+  padding-top: 100px; /* Espacio para el navbar fijo */
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(166, 220, 239, 0.8) 0%,
+    rgba(200, 230, 201, 0.6) 100%
+  );
+  z-index: 1;
+}
+
+.hero-content {
+  text-align: center;
+  color: #455a64;
+  z-index: 2;
+  position: relative;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+  color: #455a64;
+}
+
+.hero-slogan {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  line-height: 1.6;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #455a64;
+}
+
+.hero-button {
+  background-color: #a6dcef;
+  color: #455a64;
+  border: none;
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-button:hover {
+  background-color: #455a64;
+  color: #a6dcef;
+}
+
+.hero-button:active {
+  transform: translateY(-1px);
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 767px) {
+  .hero {
+    background-image: url("fondo vertical.png");
+    background-position: center top;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    padding: 0 10px;
+  }
+
+  .hero-button {
+    padding: 18px 35px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.1rem;
+  }
+
+  .hero-button {
+    padding: 15px 30px;
+    font-size: 1.1rem;
+  }
+}
+/* CIERRE Sección Hero */
+
 /* inicia css footer */
 footer {
   width: 100%;
   padding: 3em 5em 1em 5em;
-  background-color: #a6dcef;
+  background-color: #ffffff;
+  border-top: 2px solid #a6dcef;
   margin-top: auto;
   flex-shrink: 0;
 }
@@ -282,17 +397,13 @@ footer {
   align-items: center;
 }
 .social-icons img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   transition: all 0.3s ease;
-  border-radius: 50%;
-  padding: 5px;
-  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0.7;
 }
 .social-icons a:hover img {
-  transform: scale(1.15);
-  background-color: rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 8px rgba(0, 121, 107, 0.2);
+  opacity: 1;
 }
 
 @media (max-width: 767px) {
@@ -313,8 +424,8 @@ footer {
     order: 2;
   }
   .social-icons img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   .lista-footer {
     margin: 0;
