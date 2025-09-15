@@ -6,7 +6,7 @@ html,
 body {
   max-width: 100% !important;
   overflow-x: hidden !important;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -69,13 +69,14 @@ main {
   display: flex;
   color: #0288d1;
   float: right;
-  font-weight: 500;
-  font-size: large;
+  font-weight: 400;
+  font-size: 1rem;
   border: solid 2px #ffffff;
   border-top: none;
   border-bottom: none;
   text-decoration: none;
   transition: color 0.3s ease;
+  letter-spacing: 0.02em;
 }
 
 .navlist:hover {
@@ -87,18 +88,20 @@ main {
 
 .navlist-especial {
   text-align: center;
-  padding: 0.5em 1em;
+  padding: 0.6em 1.2em;
   margin: auto 1em;
   display: inline;
   float: right;
   color: #ffffff;
   background-color: #0288d1;
   border: none;
-  border-radius: 4px;
-  font-size: large;
-  font-weight: 600;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 400;
   text-decoration: none;
   transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .navlist-especial:hover {
@@ -269,33 +272,37 @@ main {
 
 .hero-title {
   font-size: 5rem;
-  font-weight: 700;
+  font-weight: 300;
   margin-bottom: 1.5rem;
-  line-height: 1.2;
+  line-height: 1.1;
   color: #0288d1;
+  letter-spacing: -0.02em;
 }
 
 .hero-slogan {
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-size: 1.4rem;
+  font-weight: 300;
   margin-bottom: 2.5rem;
   line-height: 1.6;
   max-width: 700px;
   margin-left: auto;
   margin-right: auto;
   color: #455a64;
+  letter-spacing: 0.01em;
 }
 
 .hero-button {
   background-color: #0288d1;
   color: #ffffff;
   border: none;
-  padding: 15px 35px;
-  font-size: 1.2rem;
-  font-weight: 500;
-  border-radius: 4px;
+  padding: 16px 40px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .hero-button:hover {
@@ -317,32 +324,38 @@ main {
   .hero-title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
+    font-weight: 300;
   }
 
   .hero-slogan {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-bottom: 2rem;
     padding: 0 10px;
+    font-weight: 300;
   }
 
   .hero-button {
-    padding: 18px 35px;
-    font-size: 1.2rem;
+    padding: 16px 35px;
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
 
 @media (max-width: 480px) {
   .hero-title {
     font-size: 2.8rem;
+    font-weight: 300;
   }
 
   .hero-slogan {
-    font-size: 1.1rem;
+    font-size: 1rem;
+    font-weight: 300;
   }
 
   .hero-button {
-    padding: 15px 30px;
-    font-size: 1.1rem;
+    padding: 14px 30px;
+    font-size: 0.95rem;
+    font-weight: 400;
   }
 }
 /* CIERRE Sección Hero */
@@ -371,11 +384,12 @@ footer {
 
 .footer-link {
   color: #0288d1;
-  font-weight: 400;
-  font-size: medium;
+  font-weight: 300;
+  font-size: 0.95rem;
   text-decoration: none;
   margin-bottom: 10px;
   transition: color 0.3s ease;
+  letter-spacing: 0.01em;
 }
 
 .footer-link:hover {
@@ -384,10 +398,11 @@ footer {
 
 .derechos {
   color: #455a64;
-  font-size: medium;
-  font-weight: 400;
+  font-size: 0.9rem;
+  font-weight: 300;
   text-align: center;
   margin-top: 0;
+  letter-spacing: 0.01em;
 }
 
 .social-icons {
