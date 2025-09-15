@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="main.css" />
-    <title>titulo</title>
+    <title>Odontóloga Elena Torres</title>
     <link rel="shortcut icon" href="isotipo.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,27 +15,29 @@
   </head>
   <body>
     <nav class="navbar">
-      <a href="index.html">
-        <img src="logo.png" class="logotipo" alt="logotipo" />
-      </a>
-      <div class="hamburger-menu" id="hamburger-menu">&#9776;</div>
-      <ul class="top-nav">
-        <li class="nav-item">
-          <a href="servicios.html" class="navlist">Servicios</a>
-        </li>
-        <li class="nav-item">
-          <a href="tratamientos.html" class="navlist">Tratamientos</a>
-        </li>
-        <li class="nav-item">
-          <a href="nosotros.html" class="navlist">Nosotros</a>
-        </li>
-        <li class="nav-item">
-          <a href="contacto.html" class="navlist">Contacto</a>
-        </li>
-        <li class="nav-item">
-          <a href="reserva.html" class="navlist-especial">Reservá tu turno</a>
-        </li>
-      </ul>
+      <div class="container">
+        <a href="index.html">
+          <img src="logo.png" class="logotipo" alt="logotipo" />
+        </a>
+        <div class="hamburger-menu" id="hamburger-menu">&#9776;</div>
+        <ul class="top-nav">
+          <li class="nav-item">
+            <a href="servicios.html" class="navlist">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a href="tratamientos.html" class="navlist">Tratamientos</a>
+          </li>
+          <li class="nav-item">
+            <a href="nosotros.html" class="navlist">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a href="contacto.html" class="navlist">Contacto</a>
+          </li>
+          <li class="nav-item">
+            <a href="reserva.html" class="navlist-especial">Reservá tu turno</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <main>
@@ -47,17 +49,68 @@
           <button class="hero-button">Reservá tu turno</button>
         </div>
       </section>
+
+      <!-- Sección de Información -->
+      <section class="info-section" id="info">
+        <div class="container">
+          <div class="info-grid">
+            <div class="info-card">
+              <h2 class="info-title">Ubicación</h2>
+              <div class="map-container">
+                <a href="https://www.google.com/maps/place/Obelisco/@-34.6037611,-58.3818057,21z/data=!4m6!3m5!1s0x4aa9f0a6da5edb:0x11bead4e234e558b!8m2!3d-34.6037037!4d-58.3816022!16zL20vMDM1Z2pi?entry=ttu&g_ep=EgoyMDI1MDkxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer" class="map-link">
+                  <img src="mapa-imagen.png" alt="Mapa de ubicación de la clínica" class="map-image">
+                </a>
+              </div>
+            </div>
+            
+            <div class="info-card">
+              <h2 class="info-title">Horarios</h2>
+              <div class="schedule-list">
+                <div class="schedule-item">
+                  <span class="day">Lunes</span>
+                  <span class="hours">9:00 - 19:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Martes</span>
+                  <span class="hours">9:00 - 19:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Miércoles</span>
+                  <span class="hours">9:00 - 19:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Jueves</span>
+                  <span class="hours">9:00 - 19:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Viernes</span>
+                  <span class="hours">9:00 - 19:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Sábado</span>
+                  <span class="hours">9:00 - 13:00</span>
+                </div>
+                <div class="schedule-item">
+                  <span class="day">Domingo</span>
+                  <span class="hours">Cerrado</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     
     <footer>
+      <div class="container">
         <div class="contenedor-footer">
           <div class="lista-footer">
             <a href="" class="footer-link">Servicios</a>
             <a href="" class="footer-link">Tratamientos</a>
             <a href="" class="footer-link">Nosotros</a>
             <a href="" class="footer-link">Contacto</a>
-            <a href="" class="footer-link">Ubicación</a>
-            <a href="" class="footer-link">Horarios</a>
+            <a href="#info" class="footer-link">Ubicación</a>
+            <a href="#info" class="footer-link">Horarios</a>
           </div>
   
           <div class="social-icons">
@@ -86,7 +139,8 @@
           Desarrollado por
           <a href="https://baeco.tech">Baeco Tech</a>
         </div>
-      </footer>
+      </div>
+    </footer>
   <script src="burger.js"></script>
 
 </html>
