@@ -10,11 +10,20 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  height: 100%;
 }
 
 body {
   background-color: #ffffff;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding-top: 100px; /* Espacio para el navbar fijo */
 }
 /*
   Paleta de colores odontológica:
@@ -223,3 +232,106 @@ body {
   }
 }
 /* CIERRE barra de navegación*/
+
+/* inicia css footer */
+footer {
+  width: 100%;
+  padding: 3em 5em 1em 5em;
+  background-color: #a6dcef;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.contenedor-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lista-footer {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+.footer-link {
+  color: #455a64;
+  font-weight: 400;
+  font-size: medium;
+  text-decoration: none;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #00796b;
+}
+
+.derechos {
+  color: #455a64;
+  font-size: medium;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-right: 50px;
+  align-items: center;
+}
+.social-icons img {
+  width: 35px;
+  height: 35px;
+  transition: all 0.3s ease;
+  border-radius: 50%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.social-icons a:hover img {
+  transform: scale(1.15);
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 121, 107, 0.2);
+}
+
+@media (max-width: 767px) {
+  footer {
+    padding: 2em 1.5em 1em 1.5em;
+  }
+  .contenedor-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .social-icons {
+    margin-right: 0px;
+    margin-top: 10px;
+    gap: 15px;
+    justify-content: center;
+    order: 2;
+  }
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+  .lista-footer {
+    margin: 0;
+    order: 1;
+    text-align: center;
+  }
+  .footer-link:hover {
+    color: #00796b;
+  }
+  .derechos {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .derechos a {
+    color: #00796b;
+    font-style: italic;
+    text-decoration: none;
+  }
+}
+/* cierra css footer */
