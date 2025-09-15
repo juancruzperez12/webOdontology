@@ -145,11 +145,60 @@ main {
   font-size: 30px;
   cursor: pointer;
   color: #0288d1;
+  padding: 0.5rem;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 3px;
+  background-color: #0288d1;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu::before {
+  top: 12px;
+}
+
+.hamburger-menu::after {
+  bottom: 12px;
+}
+
+.hamburger-menu span {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: #0288d1;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-menu.active::before {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger-menu.active::after {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.hamburger-menu.active span {
+  opacity: 0;
 }
 
 @media (max-width: 767px) {
   .hamburger-menu {
-    display: block;
+    display: flex;
   }
 
   .top-nav {
@@ -492,7 +541,7 @@ main {
 
   .treatments-section .m-i-texto-contenido {
     order: 1;
-    padding: 1.5rem 0;
+    padding: 1.5rem 1rem;
     max-width: 100%;
     height: auto;
     justify-content: center;
@@ -516,11 +565,133 @@ main {
     font-size: 1.8rem;
   }
 
+  .treatments-section .m-i-texto-contenido {
+    padding: 1.5rem 1.5rem;
+  }
+
   .treatments-section .m-i-texto-contenido h2 {
     font-size: 1.2rem;
   }
 }
 /* CIERRE Sección de Tratamientos */
+
+/* INICIA Sección Nosotros */
+.about-section {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.about-text {
+  flex: 1;
+  max-width: 500px;
+}
+
+.about-title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #0288d1;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.02em;
+}
+
+.about-subtitle {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #455a64;
+  margin-bottom: 2rem;
+  letter-spacing: 0.01em;
+}
+
+.about-description {
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #455a64;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.about-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doctor-photo {
+  max-width: 100%;
+  height: auto;
+  max-width: 400px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(2, 136, 209, 0.1);
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 3rem 0;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .about-subtitle {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    order: 1;
+    padding: 0 1rem;
+    max-width: 100%;
+  }
+
+  .about-image {
+    order: 2;
+  }
+
+  .doctor-photo {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    padding: 2rem 0;
+  }
+
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+
+  .doctor-photo {
+    max-width: 250px;
+  }
+}
+/* CIERRE Sección Nosotros */
 
 /* INICIA Sección de Información */
 .info-section {
