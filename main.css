@@ -151,7 +151,6 @@ main {
   position: relative;
   width: 40px;
   height: 40px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -343,6 +342,7 @@ main {
   position: relative;
   max-width: 800px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .hero-title {
@@ -389,48 +389,252 @@ main {
   transform: translateY(-1px);
 }
 
+/* Responsive para pantallas muy grandes */
+@media (min-width: 1400px) {
+  .hero-title {
+    font-size: 6rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.6rem;
+  }
+
+  .hero-content {
+    max-width: 900px;
+  }
+}
+
+/* Responsive para pantallas medianas */
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 4rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.3rem;
+  }
+
+  .hero-content {
+    padding: 0 1.5rem;
+  }
+}
+
+/* Responsive para tablets */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-slogan {
+    font-size: 1.2rem;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+}
+
 /* Responsive para pantallas pequeñas */
 @media (max-width: 767px) {
   .hero {
     background-image: url("fondo vertical.png");
     background-position: center top;
+    min-height: 100vh;
+    padding: 2rem 0;
   }
 
   .hero-title {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    font-weight: 300;
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 400;
+    line-height: 1.3;
   }
 
   .hero-slogan {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    padding: 0 10px;
-    font-weight: 300;
+    font-size: 1rem;
+    margin-bottom: 2.5rem;
+    padding: 0 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+
+  .hero-button {
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: 500;
+  }
+
+  .hero-content {
+    padding: 0 1.5rem;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    padding: 1.5rem 0;
+  }
+
+  .hero-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-slogan {
+    font-size: 0.95rem;
+    font-weight: 400;
+    padding: 0 25px;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
   }
 
   .hero-button {
     padding: 16px 35px;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 500;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
   }
 }
 
-@media (max-width: 480px) {
+/* Responsive para pantallas extra pequeñas */
+@media (max-width: 360px) {
+  .hero {
+    padding: 1rem 0;
+  }
+
   .hero-title {
-    font-size: 2.8rem;
-    font-weight: 300;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1.2rem;
   }
 
   .hero-slogan {
-    font-size: 1rem;
-    font-weight: 300;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0 30px;
+    line-height: 1.5;
+    margin-bottom: 2rem;
   }
 
   .hero-button {
     padding: 14px 30px;
     font-size: 0.95rem;
+    font-weight: 500;
+  }
+
+  .hero-content {
+    padding: 0 0.8rem;
+  }
+}
+
+/* Breakpoint específico para móviles en landscape (pantallas anchas pero bajas) */
+@media (max-width: 900px) and (max-height: 500px) {
+  .hero {
+    min-height: 100vh;
+    padding: 1rem 0;
+    margin-top: 100px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #0288d1;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-slogan {
+    font-size: 1.1rem;
+    font-weight: 300;
+    padding: 0 2rem;
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    color: #455a64;
+    letter-spacing: 0.01em;
+  }
+
+  .hero-button {
+    padding: 16px 40px;
+    font-size: 1rem;
     font-weight: 400;
+  }
+
+  .hero-content {
+    padding: 0 2rem;
+    max-width: 100%;
+  }
+}
+
+/* Breakpoint específico para iPhone 12 Pro landscape y similares (844x390) */
+@media (max-width: 844px) and (max-height: 400px) {
+  .hero {
+    padding: 0.5rem 0;
+    margin-top: 37px;
+  }
+
+  .hero-title {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+    color: #0288d1;
+    letter-spacing: -0.02em;
+  }
+
+  .hero-slogan {
+    font-size: 1.1rem;
+    font-weight: 300;
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #455a64;
+    letter-spacing: 0.01em;
+  }
+
+  .hero-button {
+    background-color: #0288d1;
+    color: #ffffff;
+    border: none;
+    padding: 16px 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .hero-content {
+    text-align: center;
+    color: #455a64;
+    z-index: 2;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+/* Mejorar contraste del texto en móviles */
+@media (max-width: 767px) {
+  .hero-title {
+    color: #01579b;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+  }
+
+  .hero-slogan {
+    color: #37474f;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
   }
 }
 /* CIERRE Sección Hero */
