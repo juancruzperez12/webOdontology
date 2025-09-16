@@ -640,12 +640,9 @@ main {
 /* CIERRE Sección Hero */
 
 /* INICIA Sección de Tratamientos */
-.treatments-section {
-  padding: 4rem 0;
-  background-color: #ffffff;
-}
+/* Esta clase ya no se usa, se reemplazó por treatments-content-section */
 
-.treatments-section .m-i-seccion-contenido {
+.treatments-content-section .m-i-seccion-contenido {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -656,6 +653,29 @@ main {
   min-height: 550px;
 }
 
+/* Sección del título de tratamientos */
+.treatments-title-section {
+  padding: 7rem 0;
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.treatments-title-section h1 {
+  text-align: center;
+  color: #0288d1;
+  font-size: 2.2rem;
+  font-weight: 300;
+  margin: 0;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+}
+
+/* Sección del contenido de tratamientos */
+.treatments-content-section {
+  padding: 1rem 0;
+  background-color: #ffffff;
+}
+
 .m-i-seccion-contenido h1 {
   text-align: center;
   color: #0288d1;
@@ -663,11 +683,47 @@ main {
   padding: 0;
   font-size: 2.5rem;
   font-weight: 300;
-  margin-bottom: 2rem;
+  margin-bottom: 0.2rem;
   letter-spacing: 0.02em;
 }
 
-.treatments-section .m-i-texto-contenido {
+/* Responsive para el título de tratamientos */
+@media (max-width: 768px) {
+  .treatments-title-section {
+    padding: 0.3rem 0;
+  }
+
+  .treatments-title-section h1 {
+    font-size: 1.8rem;
+  }
+
+  .treatments-content-section {
+    padding: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .treatments-title-section {
+    padding: 0.2rem 0;
+  }
+
+  .treatments-title-section h1 {
+    font-size: 1.6rem;
+  }
+
+  .treatments-content-section {
+    padding: 0.3rem 0;
+  }
+}
+
+/* Reducir espacio en pantallas grandes */
+@media (min-width: 1200px) {
+  .m-i-seccion-contenido h1 {
+    margin-bottom: 0.1rem;
+  }
+}
+
+.treatments-content-section .m-i-texto-contenido {
   flex: 1;
   color: #455a64;
   font-size: 1.1rem;
@@ -698,7 +754,7 @@ main {
   line-height: 1.6;
 }
 
-.treatments-section .m-i-imagen-texto-contenido {
+.treatments-content-section .m-i-imagen-texto-contenido {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -719,11 +775,11 @@ main {
 }
 
 @media (max-width: 768px) {
-  .treatments-section {
-    padding: 3rem 0;
+  .treatments-content-section {
+    padding: 0.5rem 0;
   }
 
-  .treatments-section .m-i-seccion-contenido {
+  .treatments-content-section .m-i-seccion-contenido {
     flex-direction: column;
     gap: 3rem;
     padding: 2.5rem 0;
@@ -734,16 +790,16 @@ main {
 
   .treatments-section .m-i-seccion-contenido h1 {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.8rem;
   }
 
-  .treatments-section .m-i-imagen-texto-contenido {
+  .treatments-content-section .m-i-imagen-texto-contenido {
     order: 2;
     min-height: 280px;
     padding: 0.5rem 0;
   }
 
-  .treatments-section .m-i-texto-contenido {
+  .treatments-content-section .m-i-texto-contenido {
     order: 1;
     padding: 1.5rem 1rem;
     max-width: 100%;
@@ -761,15 +817,16 @@ main {
 }
 
 @media (max-width: 480px) {
-  .treatments-section {
-    padding: 2rem 0;
+  .treatments-content-section {
+    padding: 0.3rem 0;
   }
 
   .treatments-section .m-i-seccion-contenido h1 {
     font-size: 1.8rem;
+    margin-bottom: 0.6rem;
   }
 
-  .treatments-section .m-i-texto-contenido {
+  .treatments-content-section .m-i-texto-contenido {
     padding: 1.5rem 1.5rem;
   }
 
